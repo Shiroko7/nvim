@@ -46,4 +46,14 @@ return require('packer').startup(function(use)
   use "github/copilot.vim"
   use "numToStr/Comment.nvim"
 
+  use {'preservim/nerdtree'}
+
+  use 'sbdchd/neoformat'
+  use {
+    'prettier/vim-prettier',
+    run = 'yarn install --frozen-lockfile --production',
+    ft = { 'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'html', 'svelte' }
+  }
+
+
 end) 
