@@ -74,4 +74,4 @@ vim.keymap.set('n', 'N', 'Nzzzv', { noremap = true, silent = true })
 vim.keymap.set('n', '{', '{zzzv', { noremap = true, silent = true })
 vim.keymap.set('n', '}', '}zzzv', { noremap = true, silent = true })
 
-
+vim.api.nvim_set_keymap('n', '<Leader>b', ':NERDTreeToggle<CR>', { noremap = true, silent = true })

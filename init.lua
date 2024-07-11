@@ -22,3 +22,22 @@ function GoFmt()
     vim.cmd('silent! %!gofmt')
 end
 
+-- Typescript/Svelte
+--- Configure Neoformat
+vim.g.neoformat_enabled_svelte = { 'prettier' }
+vim.g.neoformat_enabled_typescript = { 'prettier' }
+
+-- Configure Neoformat for Svelte with prettier-plugin-svelte
+vim.g.neoformat_svelte_prettier = {
+  exe = 'prettier',
+  args = { '--plugin', 'prettier-plugin-svelte', '--stdin-filepath', '%:p' },
+  stdin = 1
+}
+
+-- Auto-format on save
+vim.api.nvim_exec([[
+  augroup fmt
+    autocmd!
+    autocmd BufWritePre *.ts,*.svelte Neoformat
+  augroup END
+]], false)
