@@ -41,3 +41,13 @@ vim.api.nvim_exec([[
     autocmd BufWritePre *.ts,*.svelte Neoformat
   augroup END
 ]], false)
+
+
+-- Auto-format on save for specified file types
+vim.api.nvim_exec([[
+  augroup Prettier
+    autocmd!
+    autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.graphql,*.md,*.vue,*.html,*.svelte,*.svx PrettierAsync
+  augroup END
+]], false)
+
