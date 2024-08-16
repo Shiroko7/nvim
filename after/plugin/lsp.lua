@@ -1,4 +1,3 @@
-
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.preset("recommended")
@@ -9,6 +8,14 @@ lsp_zero.on_attach(function(client, bufnr)
 	lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
+-- Additional file extensions
+vim.cmd [[
+  augroup svelte
+    autocmd!
+    autocmd BufRead,BufNewFile *.svex set filetype=svelte
+  augroup END
+]]
+
 require('mason').setup({})
 require('mason-lspconfig').setup({
 	-- Replace the language servers listed here 
@@ -16,7 +23,7 @@ require('mason-lspconfig').setup({
     ensure_installed = {
         'clangd',
         'eslint',
-        'golangci_lint_ls',
+        'gopls',
         'jsonls',
         'luau_lsp',
         'marksman',
@@ -28,11 +35,38 @@ require('mason-lspconfig').setup({
         'tailwindcss',
         'tsserver',
     },
-	handlers = {
-		function(server_name)
-			require('lspconfig')[server_name].setup({})
-		end,
-	},
+    handlers = {
+        function(server_name)
+            local opts = {}
+            if server_name == 'svelte' then
+                opts = {
+                    settings = {
+                        svelte = {
+                            plugin = {
+                                html = {
+                                    enable = true
+                                },
+                                css = {
+                                    enable = true
+                                },
+                                javascript = {
+                                    enable = true
+                                },
+                                typescript = {
+                                    enable = true
+                                },
+                                svelte = {
+                                    enable = true
+                                }
+                            }
+                        }
+                    },
+                    filetypes = {'svelte', 'svex'}
+                }
+            end
+            require('lspconfig')[server_name].setup(opts)
+        end,
+    },
 })
 
 

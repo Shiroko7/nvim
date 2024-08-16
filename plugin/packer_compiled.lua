@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/shiro/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?.lua;/home/shiro/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?/init.lua;/home/shiro/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?.lua;/home/shiro/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/shiro/.cache/nvim/packer_hererocks/2.1.1713484068/lib/lua/5.1/?.so"
+local package_path_str = "C:\\Users\\olava\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?.lua;C:\\Users\\olava\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\olava\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\olava\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\olava\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,110 +76,110 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["Comment.nvim"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
   LuaSnip = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["copilot.vim"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
   harpoon = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   neoformat = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/neoformat",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neoformat",
     url = "https://github.com/sbdchd/neoformat"
   },
   nerdtree = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/nerdtree",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdtree",
     url = "https://github.com/preservim/nerdtree"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-treesitter-context"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
   onedark = {
     config = { "\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme onedark\bcmd\bvim\0" },
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/onedark",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark",
     url = "https://github.com/joshdick/onedark.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/undotree",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-prettier"] = {
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier",
+    path = "C:\\Users\\olava\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
   }
 }
@@ -193,68 +193,68 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType svelte ++once lua require("packer.load")({'vim-prettier'}, { ft = "svelte" }, _G.packer_plugins)]]
 vim.cmd [[au FileType css ++once lua require("packer.load")({'vim-prettier'}, { ft = "css" }, _G.packer_plugins)]]
 vim.cmd [[au FileType markdown ++once lua require("packer.load")({'vim-prettier'}, { ft = "markdown" }, _G.packer_plugins)]]
-vim.cmd [[au FileType vue ++once lua require("packer.load")({'vim-prettier'}, { ft = "vue" }, _G.packer_plugins)]]
-vim.cmd [[au FileType html ++once lua require("packer.load")({'vim-prettier'}, { ft = "html" }, _G.packer_plugins)]]
-vim.cmd [[au FileType less ++once lua require("packer.load")({'vim-prettier'}, { ft = "less" }, _G.packer_plugins)]]
 vim.cmd [[au FileType javascript ++once lua require("packer.load")({'vim-prettier'}, { ft = "javascript" }, _G.packer_plugins)]]
-vim.cmd [[au FileType scss ++once lua require("packer.load")({'vim-prettier'}, { ft = "scss" }, _G.packer_plugins)]]
-vim.cmd [[au FileType json ++once lua require("packer.load")({'vim-prettier'}, { ft = "json" }, _G.packer_plugins)]]
 vim.cmd [[au FileType graphql ++once lua require("packer.load")({'vim-prettier'}, { ft = "graphql" }, _G.packer_plugins)]]
+vim.cmd [[au FileType vue ++once lua require("packer.load")({'vim-prettier'}, { ft = "vue" }, _G.packer_plugins)]]
+vim.cmd [[au FileType svelte ++once lua require("packer.load")({'vim-prettier'}, { ft = "svelte" }, _G.packer_plugins)]]
+vim.cmd [[au FileType json ++once lua require("packer.load")({'vim-prettier'}, { ft = "json" }, _G.packer_plugins)]]
 vim.cmd [[au FileType typescript ++once lua require("packer.load")({'vim-prettier'}, { ft = "typescript" }, _G.packer_plugins)]]
+vim.cmd [[au FileType html ++once lua require("packer.load")({'vim-prettier'}, { ft = "html" }, _G.packer_plugins)]]
+vim.cmd [[au FileType scss ++once lua require("packer.load")({'vim-prettier'}, { ft = "scss" }, _G.packer_plugins)]]
+vim.cmd [[au FileType less ++once lua require("packer.load")({'vim-prettier'}, { ft = "less" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
 vim.cmd("augroup END")
 vim.cmd [[augroup filetypedetect]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/css.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/css.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/css.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/graphql.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/graphql.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/graphql.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/html.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/html.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/html.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/javascript.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/javascript.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/javascript.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/json.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/json.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/json.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/less.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/less.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/less.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/lua.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/lua.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/lua.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/markdown.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/markdown.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/markdown.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/php.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/php.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/php.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/ruby.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/ruby.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/ruby.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/scss.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/scss.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/scss.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/svelte.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/svelte.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/svelte.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/typescript.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/typescript.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/typescript.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/vue.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/vue.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/vue.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/xml.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/xml.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/xml.vim]], false)
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/yaml.vim]], true)
-vim.cmd [[source /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/yaml.vim]]
-time([[Sourcing ftdetect script at: /home/shiro/.local/share/nvim/site/pack/packer/opt/vim-prettier/ftdetect/yaml.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\css.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\css.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\css.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\graphql.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\graphql.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\graphql.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\html.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\html.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\html.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\javascript.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\javascript.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\javascript.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\json.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\json.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\json.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\less.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\less.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\less.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\lua.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\lua.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\lua.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\markdown.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\markdown.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\markdown.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\php.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\php.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\php.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\ruby.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\ruby.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\ruby.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\scss.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\scss.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\scss.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\svelte.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\svelte.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\svelte.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\typescript.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\typescript.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\typescript.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\vue.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\vue.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\vue.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\xml.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\xml.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\xml.vim]], false)
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\yaml.vim]], true)
+vim.cmd [[source C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\yaml.vim]]
+time([[Sourcing ftdetect script at: C:\Users\olava\AppData\Local\nvim-data\site\pack\packer\opt\vim-prettier\ftdetect\yaml.vim]], false)
 vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
