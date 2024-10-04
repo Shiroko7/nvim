@@ -46,7 +46,12 @@ return require('packer').startup(function(use)
   use "github/copilot.vim"
   use "numToStr/Comment.nvim"
 
-  use {'preservim/nerdtree'}
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  }
 
   use 'sbdchd/neoformat'
   use {
