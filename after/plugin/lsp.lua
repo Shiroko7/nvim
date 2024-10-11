@@ -29,6 +29,11 @@ require('mason-lspconfig').setup({
     handlers = {
         function(server_name)
             local opts = {}
+            if server_name == 'marksman' then
+                opts = {
+                    filetypes = { 'markdown', 'svx' }
+                }
+            end
             if server_name == 'svelte' then
                 opts = {
                     settings = {
