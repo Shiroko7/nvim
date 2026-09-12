@@ -1,0 +1,26 @@
+# Packer's generated loader. This was committed, and it hardcoded
+# /home/shiro/.local/share/nvim - absolute paths from one machine, checked into
+# a config meant to be cloned onto others. Packer is gone now; the rule stays so
+# it cannot come back.
+/plugin/packer_compiled.lua
+
+# Editor and OS scratch
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Written into the config directory at runtime on some setups
+/spell/
+/.netrwhist
+/tags
+/shada/
+__pycache__/
+
+# NOT ignored, deliberately:
+#   lazy-lock.json  pins every plugin to an exact commit, which is what makes a
+#                   fresh clone reproduce this setup rather than approximate it
+#   lazyvim.json    records which LazyVim extras are enabled; :LazyExtras reads
+#                   and writes it
