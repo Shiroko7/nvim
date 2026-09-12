@@ -37,7 +37,17 @@ return {
     "nvim-tree/nvim-tree.lua",
     lazy = false,
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {},
+    opts = {
+      -- Both of these default to true, and both assume netrw is being thrown
+      -- away. This config keeps netrw, because <leader>pv opens it with :Ex.
+      --
+      -- Leaving hijack_netrw on makes nvim-tree run `autocmd! FileExplorer *`
+      -- to dismantle netrw's handler. When netrw has not loaded yet that group
+      -- does not exist, and startup ends with
+      -- `E216: No such group or event: FileExplorer *` every single time.
+      disable_netrw = false,
+      hijack_netrw = false,
+    },
   },
 
   -- Sticky context header. Settings are exactly the old
