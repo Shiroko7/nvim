@@ -41,7 +41,11 @@ require("lazy").setup({
     version = false,
   },
   install = { colorscheme = { "onedark", "habamax" } },
-  checker = { enabled = true, notify = false },
+  -- Off deliberately. With it on, lazy.nvim polls for upstream commits and
+  -- nudges you to update, which is how a working setup drifts away from the
+  -- versions pinned in lazy-lock.json. Run :Lazy sync when you actually want
+  -- to move, and the lockfile records exactly what you moved to.
+  checker = { enabled = false },
   performance = {
     rtp = {
       -- netrwPlugin is deliberately NOT disabled here, unlike the LazyVim

@@ -31,14 +31,22 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        -- Both server entries used to list `svx`, which never matched: the
+        -- autocmd in config/autocmds.lua gives *.svx the compound filetype
+        -- `svelte.markdown`, so the plain `svx` filetype never occurs. Changed
+        -- to the filetype that actually exists.
+        --
+        -- `svex` stays. It is not a typo - it is the mdsvex extension used in
+        -- one of the Svelte projects, where markdown renders as HTML.
+
         -- Your addition: treat mdsvex files as markdown for marksman too.
         marksman = {
-          filetypes = { "markdown", "svx" },
+          filetypes = { "markdown", "svelte.markdown" },
         },
 
         -- Your svelte settings, carried over verbatim on top of lang.svelte.
         svelte = {
-          filetypes = { "svelte", "svex", "svx" },
+          filetypes = { "svelte", "svex", "svelte.markdown" },
           settings = {
             svelte = {
               plugin = {
